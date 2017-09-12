@@ -5,15 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#EEF1F6"
-    tools:context="com.juborajsarker.agecalculator.TimePeriodFragment">
+    tools:context="com.juborajsarker.agecalculator.fragment.TimePeriodFragment">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:orientation="vertical">
 
 
 
@@ -21,147 +20,45 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
-
-
-            <TextView
-                android:id="@+id/main_tv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="From date"
-                android:textColor="#fff"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:padding="10dp"
-                android:background="@color/colorPrimary"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="#3BB6BD"
-                android:paddingBottom="15dp"
-                android:paddingTop="15dp"
-                android:layout_marginBottom="10dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Select date"
-                        android:layout_marginLeft="2dp"
-                        android:padding="5dp"/>
-
-                    <Spinner
-                        android:id="@+id/select_from_date"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:entries="@array/select_dates">
-
-
-                    </Spinner>
-
-                </LinearLayout>
-
-
-
-
-
-
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Select month"
-                        android:layout_marginLeft="2dp"
-                        android:padding="5dp"/>
-
-                    <Spinner
-                        android:id="@+id/select_from_month"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:entries="@array/select_months">
-
-
-                    </Spinner>
-
-
-
-                </LinearLayout>
-
-
-
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Enter year"
-                        android:layout_marginLeft="2dp"
-                        android:padding="5dp"/>
-
-
-                    <EditText
-                        android:id="@+id/select_from_year"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Enter year"
-                        android:maxLines="1"
-                        android:maxLength="4"
-                        android:inputType="numberDecimal"/>
-
-
-
-                </LinearLayout>
-
-
-
-
-
-        </LinearLayout>
+            android:gravity="center"
+            android:background="@drawable/layout_background_design"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:elevation="5dp">
 
 
 
             <LinearLayout
+                android:id="@+id/layout_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:background="#f9f6f9"
+                android:paddingTop="10dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="4dp">
+
+
 
 
                 <TextView
-                    android:id="@+id/to_date_TV"
+                    android:id="@+id/main_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@color/colorPrimary"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="To date"
+                    android:text="From date"
                     android:textColor="#fff"
-                    android:textSize="20sp" />
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -171,7 +68,8 @@
                     android:layout_marginRight="10dp"
                     android:background="#3BB6BD"
                     android:paddingBottom="15dp"
-                    android:paddingTop="15dp">
+                    android:paddingTop="15dp"
+                    android:layout_marginBottom="10dp">
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -187,11 +85,13 @@
                             android:padding="5dp"/>
 
                         <Spinner
-                            android:id="@+id/select_to_date"
+                            android:id="@+id/select_from_date"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:entries="@array/select_dates">
-
+                            android:entries="@array/select_dates"
+                            android:background="@drawable/edit_text_design"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="2dp">
 
                         </Spinner>
 
@@ -217,10 +117,13 @@
                             android:padding="5dp"/>
 
                         <Spinner
-                            android:id="@+id/select_to_month"
+                            android:id="@+id/select_from_month"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:entries="@array/select_months">
+                            android:entries="@array/select_months"
+                            android:background="@drawable/edit_text_design"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="2dp">
 
 
                         </Spinner>
@@ -247,13 +150,17 @@
 
 
                         <EditText
-                            android:id="@+id/select_to_year"
+                            android:id="@+id/select_from_year"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Enter year"
                             android:maxLines="1"
                             android:maxLength="4"
-                            android:inputType="numberDecimal"/>
+                            android:textSize="16sp"
+                            android:inputType="number"
+                            android:background="@drawable/edit_text_design"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="2dp"/>
 
 
 
@@ -269,6 +176,157 @@
 
 
 
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f9f6f9"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp"
+                android:elevation="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:id="@+id/to_date_TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="To date"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#3BB6BD"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Select date"
+                                android:layout_marginLeft="2dp"
+                                android:padding="5dp"/>
+
+                            <Spinner
+                                android:id="@+id/select_to_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/select_dates"
+                                android:background="@drawable/edit_text_design"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginLeft="2dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Select month"
+                                android:layout_marginLeft="2dp"
+                                android:padding="5dp"/>
+
+                            <Spinner
+                                android:id="@+id/select_to_month"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/select_months"
+                                android:background="@drawable/edit_text_design"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginLeft="2dp">
+
+
+                            </Spinner>
+
+
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Enter year"
+                                android:layout_marginLeft="2dp"
+                                android:padding="5dp"/>
+
+
+                            <EditText
+                                android:id="@+id/select_to_year"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Enter year"
+                                android:maxLines="1"
+                                android:maxLength="4"
+                                android:textSize="16sp"
+                                android:inputType="numberDecimal"
+                                android:background="@drawable/edit_text_design"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginLeft="2dp"/>
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
 
 
 
@@ -278,7 +336,22 @@
 
 
 
-        </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
 
         <Button
             android:id="@+id/button_calculate"
@@ -287,10 +360,11 @@
             android:text="Calculate"
             android:textAllCaps="false"
             android:textColor="#fff"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
             android:textSize="18sp"
+            android:textStyle="bold"
             android:background="@color/colorPrimary"/>
 
 

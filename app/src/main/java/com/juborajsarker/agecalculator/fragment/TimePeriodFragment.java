@@ -1,4 +1,4 @@
-package com.juborajsarker.agecalculator;
+package com.juborajsarker.agecalculator.fragment;
 
 
 import android.os.Bundle;
@@ -14,6 +14,8 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.juborajsarker.agecalculator.R;
+import com.juborajsarker.agecalculator.dialog.ViewDialog;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -68,7 +70,7 @@ public class TimePeriodFragment extends Fragment {
                 mInterstitialAd = new InterstitialAd(getContext());
                 mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen1));
 
-                AdRequest adRequest = new AdRequest.Builder().addTestDevice("2BA46C54FD47FD80CBBAD95AE0F70E1A").build(); //add test device
+                AdRequest adRequest = new AdRequest.Builder().addTestDevice("93448558CC721EBAD8FAAE5DA52596D3").build(); //add test device
                 mInterstitialAd.loadAd(adRequest);
 
                 mInterstitialAd.setAdListener(new AdListener() {

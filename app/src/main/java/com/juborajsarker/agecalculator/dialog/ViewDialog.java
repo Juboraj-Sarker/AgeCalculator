@@ -1,4 +1,4 @@
-package com.juborajsarker.agecalculator;
+package com.juborajsarker.agecalculator.dialog;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.juborajsarker.agecalculator.R;
 
 /**
  * Created by jubor on 5/1/2017.

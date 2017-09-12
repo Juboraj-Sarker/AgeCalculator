@@ -1,4 +1,4 @@
-package com.juborajsarker.agecalculator;
+package com.juborajsarker.agecalculator.activity;
 
 import android.content.Intent;
 import android.os.Build;
@@ -7,6 +7,8 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
+import com.juborajsarker.agecalculator.R;
 
 public class ResultActivity extends AppCompatActivity {
 

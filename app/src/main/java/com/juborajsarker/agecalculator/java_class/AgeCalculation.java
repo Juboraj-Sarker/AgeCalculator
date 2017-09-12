@@ -1,4 +1,4 @@
-package com.juborajsarker.agecalculator;
+package com.juborajsarker.agecalculator.java_class;
 
 import java.util.Calendar;
 
