@@ -22,7 +22,7 @@
     <item
         android:id="@+id/menu_more_app"
         android:orderInCategory="3"
-        android:title="More App"
+        android:title="More Apps"
         app:showAsAction="never"
         android:onClick="moreApps"/>
 
