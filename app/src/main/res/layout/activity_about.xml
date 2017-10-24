@@ -40,7 +40,9 @@
             android:src="@drawable/main_icon"
             android:layout_gravity="center"
             android:padding="8dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            android:background="@color/colorPrimary"/>
 
 
         <ScrollView
@@ -117,7 +119,7 @@
                         android:id="@+id/versionCode"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="5"
+                        android:text="6"
                         android:textColor="#aa000000"
                         android:textSize="18sp"
                         android:padding="8dp"
@@ -152,7 +154,7 @@
                         android:id="@+id/versionName"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="5.0"
+                        android:text="6.0"
                         android:textColor="#aa000000"
                         android:textSize="18sp"
                         android:padding="8dp"

@@ -11,7 +11,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -151,47 +150,5 @@ public class AboutActivity extends AppCompatActivity {
         intent.addFlags(flags);
         return intent;
     }
-
-
-
-
-    public void facebook(View view) {
-
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.addCategory(Intent.CATEGORY_BROWSABLE);
-        intent.setData(Uri.parse("https://www.facebook.com/sarker.juboraj"));
-        startActivity(intent);
-    }
-
-    public void googlePlus(View view) {
-
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.addCategory(Intent.CATEGORY_BROWSABLE);
-        intent.setData(Uri.parse("https://plus.google.com/+JuborajSarker001"));
-        startActivity(intent);
-    }
-
-    public void twitter(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.addCategory(Intent.CATEGORY_BROWSABLE);
-        intent.setData(Uri.parse("https://twitter.com/juboraj_sarker"));
-        startActivity(intent);
-    }
-
-    public void linkedIn(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.addCategory(Intent.CATEGORY_BROWSABLE);
-        intent.setData(Uri.parse("https://www.linkedin.com/in/juboraj-sarker"));
-        startActivity(intent);
-    }
-
-
-
-
-
 
 }
