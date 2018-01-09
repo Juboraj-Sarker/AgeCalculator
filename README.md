@@ -1,0 +1,2 @@
+# Age Calculator
+We all are human. And also we all have a date of birth. And sometimes we want to calculate our date of birth. But then we need to calculate in mobile phone with month, date and year individually calculation. And also sometimes we need to learn specific time period between two dates. But often what we calculate it may wrong. So Age Calculator will help a person to calculate his date of birth accurately and also find out time period between two dates. 
